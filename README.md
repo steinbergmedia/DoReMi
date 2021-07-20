@@ -357,7 +357,7 @@ A detailed **table of what each objet includes for musical features** is shown b
 
 Given that each project can have one or more pages, we use the mono png export from Dorico at 300 DPI. Each image is named after the OMR metadata xml file, with the number suffix, starting 001. Images are of dimension 2475 × 3504 pixels and are binarised. An example of an image is given below. All these images are binarised and ready to use. 
 
-![clef]({% link assets/img/Bartok - String Quartet 5 mvt 3-034.png %})
+![clef]({./assets/img/Bartok - String Quartet 5 mvt 3-034.png %})
 
 
 <A id="MIDI"> MIDI </A> 
