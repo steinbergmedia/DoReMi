@@ -100,7 +100,6 @@ More on how these files can be exported check <A href="https://steinberg.help/do
 ```
 
 
-<!-- ![MusicXML-example]({% link /assets/img/musicXML.png %}) -->
 
 <A id="OMR-metadata"> OMR metadata </A> 
 
@@ -115,7 +114,7 @@ OMR metadata are the files that incorporate most of the information needed for O
 
 Depending on the task the dataset includes both parsed and unparsed XML files. If the dataset is to be used only for object detection or instance segmentation the parsed files are divided by page, corresponding to an image respective to the actual page. These files hold information on the bounding boxes and pixel mask information.
 
-<!-- ![unparsed-xml]({% link /assets/img/unparsed-xml.png %}) -->
+
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -181,7 +180,7 @@ Depending on the task the dataset includes both parsed and unparsed XML files. I
 </Node>
 ```
 
- <!-- ![notehead]({% link /assets/img/notehead.png %}) -->
+
  
  For elements such as clefs, our dataset provides an event ID, clef type, clef hotspot, clef required stave lines and clef stave position. Clef hotspot identifies the midi pitch that clef denotes, i.e. for treble clef is G4, as that is the pitch of the second stave line from the bottom. Clef required stave lines shows how many stave lines the clef needs.
 
@@ -204,7 +203,7 @@ Depending on the task the dataset includes both parsed and unparsed XML files. I
 </Data>
 </Node>
 ```
-<!-- ![clef]({% link /assets/img/clef.png %}) -->
+
  
  Time signatures will include the event ID, time signature description, for example, 3/2 (h, 1+1+1).
 <br />
@@ -226,7 +225,7 @@ Depending on the task the dataset includes both parsed and unparsed XML files. I
 </Node>
 ```
 
-<!-- ![timesig]({% link /assets/img/timesig.png %}) -->
+
 
  Flags, if they are part of grace notes, will have a boolean value set to True. Slurs and ties have their event IDs, while barlines, rests, accidentals, augmentation dots, stems do not have such information. Beams will not have their event ID; instead, they will have a list of the event IDs their respective noteheads have. 
 
@@ -244,7 +243,7 @@ Depending on the task the dataset includes both parsed and unparsed XML files. I
 </Data>
 </Node>
 ```
-<!-- ![staffline]({% link /assets/img/staff-line.png %}) -->
+
 
 A detailed **table of what each objet includes for musical features** is shown below. Scroll right for all attributes.
 
@@ -433,7 +432,8 @@ It is anticipated that we would iterate through the generation process by adding
 ## <A id="preparation"> Data Preparation and analysis </A>
 
 The number of classes in the dataset is 94 as shown in the image below. 
-![classes]({% link /assets/img/classes.png %})
+![classes](./assets/img/classes.png)
+
 
 
 ## <A id="publication"> Publication and Sharing </A>
