@@ -50,12 +50,12 @@ The following respective data formats:
 Let’s start by explaining each one of the data types and what they contain:
 
 <A id="dorico-project"> Dorico project </A>
-![Dorico-project]({% link /assets/img/Dorico_Logo.png %})
+![Dorico-project](./assets/img/Dorico_Logo.png)
  
 
 When saving the scores in Dorico, it uses the .dorico file format, which is the project type. Saving the projects is really important for the lifecycle since it allows us to use the same layout settings if we later want to generate other data or change.
 
-![Dorico-soft]({% link /assets/img/Dorico-soft.png %})
+![Dorico-soft](./assets/img/Dorico-soft.png)
 
 <A id="MusicXML">  MusicXML </A> 
 
@@ -106,7 +106,7 @@ More on how these files can be exported check <A href="https://steinberg.help/do
 Following the organisation of Muscima++, DoReMi has an OMR metadata file which includes bounding boxes of each element: top, left, width and height. It also includes the pixel mask for each element giving each object’s pixels inside the bounding box. 
 
 In words, each file can have data on more than one page, if that is the case, an id is assigned to each page. Each page can have multiple nodes. Nodes are the individual elements or objects in the score, for instance, stem, staff lines, blackhead, whole note, augmentation dot and so on. Each object or node is assigned an id. This node will now have the bounding box information which includes top, left, width and height. The top is the distance from the top of the page to the point where the object starts (vertically). Left is the distance from the left of the page to the point where the object starts (horizontally). Height is the distance from top to where the object ends (vertically). Width is the distance from the left point to the rightest point where the object ends (horizontally). 
-![bbox]({% link /assets/img/bbox.png %})
+![bbox](./assets/img/bbox.png)
 
 Additionally, DoReMi provides the relationships between primitives. It vaguely follows the Music Notation Graph (MUNG), which creates a graph representation of music notations. Inlinks and outlinks reference back and forth to the ID of the objects they are related to—for instance, a notehead half outlinks to a stem or a slur or both of them. Conversely, the stem inlinks to the notehead half.
 
@@ -357,14 +357,14 @@ A detailed **table of what each objet includes for musical features** is shown b
 
 Given that each project can have one or more pages, we use the mono png export from Dorico at 300 DPI. Each image is named after the OMR metadata xml file, with the number suffix, starting 001. Images are of dimension 2475 × 3504 pixels and are binarised. An example of an image is given below. All these images are binarised and ready to use. 
 
-![clef]({./assets/img/Bartok - String Quartet 5 mvt 3-034.png %})
+![clef](./assets/img/Bartok - String Quartet 5 mvt 3-034.png)
 
 
 <A id="MIDI"> MIDI </A> 
 
 MIDI (Musical Instrument Digital Interface) standard file provides a standardized file format way for music sequences to be saved, transported, and opened in other systems. They are characterised by their compact size which led to their widespread use in computers. They are intended for universal use and have information such as note values, timing and track name. We want to include such files in our dataset since MIDI is one of the end file formats retrieved from some OMR architecture. We believe that it is essential to include such files that could later on may be used for multi-modal learning in OMR as well.
 
-![Dorico-midi]({% link /assets/img/dorico-midi.png %})
+![Dorico-midi](./assets/img/dorico-midi.png)
 
 <A id="MEI"> Music Encoding Initiative (MEI) </A>
 
