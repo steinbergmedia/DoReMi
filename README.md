@@ -443,3 +443,5 @@ The dataset including only copy right free scores is already published in [this 
 ## <A id="managment"> Long-term Management </A>
 
 
+An extension of this work is a dataset for composer identification which you can find here https://github.com/steinbergmedia/DoReMi.git 
+
